@@ -1,0 +1,45 @@
+.slideshowpicture {
+    object-fit: cover;
+    width: 85%;
+    margin: auto;
+}
+
+#carouselExampleDark {
+    width: 80%;
+    margin: auto;
+}
+
+.imgBtns {
+    width: 7rem !important;
+    margin: 0 5rem 0 5rem;
+    border: none;
+    background: none;
+}
+
+.tinyImg {
+    width: 7rem;
+
+    object-fit: cover;
+}
+
+.nav-item {
+    margin:auto;
+}
+
+.indicators {
+    margin: 0 !important;
+}
+
+.carousel-indicators {
+    position: relative !important;
+
+}
+
+.carousel-indicators [data-bs-target] {
+    opacity: .75 !important;
+}
+
+.header {
+    text-align: center;
+    margin: auto;
+}
