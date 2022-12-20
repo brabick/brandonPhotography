@@ -1,6 +1,6 @@
 .slideshowpicture {
     object-fit: cover;
-    width: 85%;
+    width: 80%;
     margin: auto;
 }
 
@@ -30,9 +30,17 @@
     margin: 0 !important;
 }
 
+.carousel-indicators-div {
+    display: block;
+    height: 112px;
+    max-width: 70% !important;
+    margin: auto;
+    overflow-x: auto;
+    background: aliceblue;
+}
+
 .carousel-indicators {
     position: relative !important;
-
 }
 
 .carousel-indicators [data-bs-target] {
@@ -41,5 +49,16 @@
 
 .header {
     text-align: center;
+    margin: auto;
+    padding: 1rem;
+    font-family: OCR A Std, monospace;
+}
+
+.contact-card {
+    width: 20rem;
+    margin: auto;
+}
+
+.contact-container {
     margin: auto;
 }

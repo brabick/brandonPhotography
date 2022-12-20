@@ -27,3 +27,7 @@ def landscape(request):
 
     return render(request, 'pages/landscape.html', images)
 
+def contact(request):
+
+    return render(request, 'pages/contact.html')
+
