@@ -1,6 +1,6 @@
 {% include "pages/navbar.html" %}
 
-<div class="container overflow-hidden">
+<div class="container">
     <div class="row">
         <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -34,7 +34,7 @@
                 {% for i in data %}
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to={{forloop.counter0}}
                         class="imgBtns"
-                        aria-current="true" aria-label="Slide 1"  onclick="scrollerington()">
+                        aria-current="true" aria-label="Slide 1">
                     <img src={{i}} class="d-block tinyImg" alt="..." onclick="scrollerington()">
                 </button>
                 {% endfor %}

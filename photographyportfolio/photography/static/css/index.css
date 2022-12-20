@@ -10,14 +10,14 @@
 }
 
 .imgBtns {
-    width: 7rem !important;
-    margin: 0 5rem 0 5rem;
+    width: 5rem !important;
+    margin: 0 4rem 0 4rem;
     border: none;
     background: none;
 }
 
 .tinyImg {
-    width: 7rem;
+    width: 5rem;
 
     object-fit: cover;
 }
@@ -32,10 +32,11 @@
 
 .carousel-indicators-div {
     display: block;
-    height: 112px;
-    max-width: 70% !important;
+    height: 100px;
+    width: 40%;
+    max-width: 80% !important;
     margin: auto;
-    overflow-x: auto;
+    overflow-x: scroll;
     background: aliceblue;
 }
 
