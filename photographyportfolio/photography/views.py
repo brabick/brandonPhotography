@@ -5,7 +5,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from django.views import generic
 
-from photographyportfolio.photography.models import Post
+from .models import Post
 
 
 def getImages(dir):
@@ -37,14 +37,11 @@ def contact(request):
     return render(request, 'pages/contact.html')
 
 
-def post_list(request):
-    queryset = Post.objects.
-    template_name = 'index.html'
-
-    return render(request, 'pages/postlist.html')
+class PostList(generic.ListView):
+    queryset = Post.objects.filter(status=1).order_by('-created_on')
+    template_name = 'pages/blog.html'
 
 
-def post_detail(request):
-    post = Post.objects.filter
-
-    return render(request, 'pages/postdetail.html')
+class PostDetail(generic.DetailView):
+    model = Post
+    template_name = 'post_detail.html'
