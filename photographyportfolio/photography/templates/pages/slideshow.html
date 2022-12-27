@@ -41,9 +41,21 @@
         </div>
     </div>
 </div>
+<p id="p1"></p>
+<p id="p2"></p>
 
 {% load static %}
 <script src="../../static/script.js">
 
+</script>
+<script>
+$(document).ready(function(){
+        var c = "{{count}}";
+        var w = c * 85;
+        if(w > $(".row").width()) {
+            w = $(".row").width();
+        }
+        $("#carouselIndicators").width(w);
+});
 </script>
 

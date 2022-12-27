@@ -9,12 +9,14 @@ from .models import Post
 
 
 def getImages(dir):
-    images = {'data': []}
+    images = {'data': [],
+              'count': 0}
     directory = "C:\PhotographyPortfolio\photographyportfolio\photography\static" + dir
     for file in os.listdir(directory):
         # f = os.path.join(directory, file)
         f = dir + file
         images['data'].append('../../static' + f)
+        images['count'] += 1
 
     print(images)
     return images

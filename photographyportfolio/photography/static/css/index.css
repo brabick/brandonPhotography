@@ -10,14 +10,14 @@
 }
 
 .imgBtns {
-    width: 5rem !important;
+    width: 4rem !important;
     margin: 0 4rem 0 4rem;
     border: none;
     background: none;
 }
 
 .tinyImg {
-    width: 5rem;
+    width: 4rem;
 
     object-fit: cover;
 }
@@ -32,16 +32,19 @@
 
 .navbar {
     background: aliceblue !important;
+
 }
 
 .carousel-indicators-div {
     display: block;
-    height: 80px;
-    max-width: 80% !important;
+    height: 70px;
     margin: auto;
-    overflow-x: scroll;
-    background: aliceblue;
 
+}
+
+#carouselIndicators {
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 .carousel-indicators {
