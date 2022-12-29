@@ -70,3 +70,8 @@
 .contact-container {
     margin: auto;
 }
+
+.blog-card {
+    width: 40rem;
+    margin: auto;
+}

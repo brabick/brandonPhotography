@@ -2,16 +2,12 @@
 {% include "pages/navbar.html" %}
 {% for post in post_list %}
 <div class="container contact-container">
-    <div class="card contact-card">
-        <img src="..." class="card-img-top" alt="...">
+    <div class="card blog-card">
         <div class="card-body">
             <h5 class="card-title">{{ post.title }}</h5>
             <hr />
             <h6>{{ post.author }} | {{ post.created_on}}</h6>
             <p class="card-text">{{post.content|slice:":200" }}</p>
-            <p class="card-text">instagram: instagram.com/bra_bickerton</p>
-            <p class="card-text">github: brabick.github.io</p>
-            <p class="card-text">I'm also a programmer, so yea I can do that stuff to. I made this website btw</p>
         </div>
     </div>
 </div>
